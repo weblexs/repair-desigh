@@ -332,7 +332,7 @@ template {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
-    border: 1px solid .button--outline light;
+    border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
 
@@ -360,7 +360,7 @@ body {
       content: '';
       width: 32px;
       height: 2px;
-      background-color: .section-title__image::before, .section-title__image::after primary;
+      background-color: #E3B873;
       margin: 0 10px; }
 
 .header {
@@ -437,16 +437,16 @@ body {
     bottom: 0;
     min-width: 247px;
     min-height: 97px;
-    background-color: .hero__scroll-down dark;
+    background-color: #131313;
     text-transform: uppercase;
     text-decoration: none;
-    color: .hero__scroll-down light; }
+    color: #fff; }
     .hero__scroll-down::after {
       content: '';
-      background: url("../img/arrow-down.svg") no-repeat centr;
+      background: url("../img/arrow-down.svg") no-repeat center;
       width: 30px;
       height: 30px;
-      border: 2px solid .hero__scroll-down::after primary;
+      border: 2px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
 
@@ -467,7 +467,7 @@ body {
       content: '';
       width: 50px;
       height: 1px;
-      background-color: .instagram__link::after primary;
+      background-color: #E3B873;
       margin-left: 8px; }
 
 .title {
@@ -476,4 +476,4 @@ body {
   text-transform: uppercase;
   font-size: 40px; }
   .title--primary {
-    color: .title--primary primary; }
+    color: #E3B873; }
