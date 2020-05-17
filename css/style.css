@@ -392,11 +392,11 @@ template {
 }
 
 .label {
-  font-size: 1.07rem;
+  font-size: 1.142rem;
 }
 
 .label--light {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .input {
@@ -840,10 +840,11 @@ img {
 }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   z-index: 199;
   left: 0;
-  top: 0;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -858,6 +859,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal--visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal__dialog {
@@ -885,7 +891,7 @@ img {
   font-size: 1.357rem;
   text-align: center;
   margin: 0;
-  margin-bottom: 2.42rem;
+  margin-bottom: 2.428rem;
 }
 
 .modal__form {
@@ -899,7 +905,7 @@ img {
 }
 
 .modal__input {
-  margin-bottom: 3.428rem;
+  margin-bottom: 3.482rem;
 }
 
 .modal__input:last-of-type {
@@ -913,6 +919,7 @@ img {
 .modal__button {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  padding: 19px 50px;
 }
 
 @media screen and (max-width: 1200px) {

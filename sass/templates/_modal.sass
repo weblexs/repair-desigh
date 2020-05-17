@@ -1,8 +1,10 @@
 .modal
+  opacity: 0
+  visibility: hidden
   position: fixed
   z-index: 199
   left: 0
-  top: 0
+  top: 
   bottom: 0
   right: 0
   width: 100%
@@ -11,6 +13,9 @@
   display: flex
   align-items: center
   justify-content: center
+  &--visible
+    opacity: 1
+    visibility: visible
   &__dialog
     position: relative
     max-width: 36.36rem
@@ -32,16 +37,17 @@
     font-size: 1.357rem
     text-align: center
     margin: 0
-    margin-bottom: 2.42rem
+    margin-bottom: 2.428rem
   &__form
     display: flex
     flex-direction: column
   &__input
-    margin-bottom: 3.428rem
+    margin-bottom: 3.482rem
     &:last-of-type
       margin-bottom: 1rem
   &__policy
     margin-bottom: 2.7rem
   &__button
     align-self: flex-end
+    padding: 19px 50px
       
