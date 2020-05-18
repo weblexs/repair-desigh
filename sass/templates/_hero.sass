@@ -16,15 +16,26 @@
     width: 100%
     height: 100%
     background-color: rgba($dark, 0.7)
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 3.46rem
+    background-color: $dark
   &__content
     position: relative
     max-width: 47.85rem
     margin-left: 4.28rem
+    margin-bottom: 85px
+    left: -19px
   &__title
     margin-bottom: 1rem
   &__text
     font-size: 1.57rem
-    line-height: 131%
+    line-height: 2.1rem
     max-width: 500px
     /** margin: 0 **/
     margin-bottom: 3rem
@@ -43,6 +54,7 @@
     height: 100%
   &__scroll-down
     position: absolute
+    z-index: 3
     display: flex
     justify-content: center
     align-items: center
