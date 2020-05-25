@@ -373,6 +373,13 @@ template {
   .policy__label--center {
     justify-content: center; }
 
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border: 1px solid tomato;
+  color: tomato; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -880,10 +887,13 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.428rem;
     margin-bottom: 3.482rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
