@@ -844,6 +844,28 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem;
+    min-height: 465px;
+    max-width: 925px;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer__item {
+    font-size: 1.429rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873; }
+    .footer__item-text {
+      max-width: 33.071rem;
+      margin: 0 auto 1.857rem;
+      font-family: 'Yeseva One', cursive; }
+    .footer__item-link {
+      text-decoration: none; }
+      .footer__item-link:last-of-type {
+        margin-left: 1.071rem; }
+    .footer__item-social {
+      margin-bottom: 3.071rem; }
 
 .modal {
   opacity: 0;
