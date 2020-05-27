@@ -971,7 +971,10 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .footer__map {
+    width: 100%;
+    min-height: 240px; } }
 
 @media screen and (max-width: 520px) {
   .hero__scroll-down {

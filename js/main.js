@@ -31,39 +31,6 @@ $(document).ready(function () {
 
   new WOW().init();
 
-/*   var wow = new WOW(
-    {
-      boxClass:     'wow',      // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset:       10,          // distance to the element when triggering the animation (default is 0)
-      mobile:       true,       // trigger animations on mobile devices (default is true)
-      live:         true,       // act on asynchronously loaded content (default is true)
-      callback:     function(box) {
-        // the callback is fired every time an animation is started
-        // the argument that is passed in is the DOM node being animated
-      },
-      scrollContainer: null,    // optional scroll container selector, otherwise use window,
-      resetAnimation: true,     // reset animation on end (default is true)
-    }
-  );
-  wow.init( ); */
-
-
-/*   wow = new WOW ( 
-    { 
-    boxClass: 'wow', // default 
-    animateClass: 'animated', // default 
-    offset: 0, // default 
-    mobile: true, // default 
-    live: true // default 
-  } 
-  ) 
-  wow.init ( ); */
-
-
-  
-  
-
   // валидация формы
   $('.modal__form').validate({
 
@@ -94,6 +61,21 @@ $(document).ready(function () {
         required: "Обязательно укажите Email",
         email: "Введите в формате: name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса' + response);
+        }
+      });
     }
   });
 
