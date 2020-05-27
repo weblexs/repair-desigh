@@ -411,7 +411,7 @@ img {
 
 .section {
   padding: 60px 0; }
-  .section--dark {
+  .section-dark {
     background-color: #131313;
     color: #fff; }
   .section-title {
@@ -641,6 +641,9 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px; }
+
+.control__input {
+  color: #131313; }
 
 .control__section-title {
   margin-bottom: 2.214rem;
