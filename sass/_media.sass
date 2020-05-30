@@ -4,11 +4,20 @@
   .nav
     &__item
       margin-right: 1rem
+  .card
+    &__text
+      margin-left: 0
 @media screen and ( min-width: 1200px )
   .nav
     &__item
       margin-right: 1rem
 @media screen and ( max-width: 992px )
+  .section 
+    &-title 
+      &__text 
+        margin-bottom: 2.7692rem
+        margin-top: 1.69rem
+        max-width: 24rem
   .nav
     display: none
   .hero
@@ -26,7 +35,23 @@
   .card
     &__text
       margin-left: 0
+  .designs
+    background: $dark
+    &__section-title
+      color: $light
+    &__subtitle
+      color: $light
+    &__text
+      color: $light
+    padding-bottom: 0
+  .footer
+    &__wrap
+      margin-top: 1px
+
 @media screen and ( max-width: 570px )
+  .col
+    &-30, &-50
+      width: 100%
   .contacts
     &__phone
       margin-right: 0
@@ -48,6 +73,21 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
+      margin-right: 0
+      width: 100%
+      font-size: 1.08rem
+  /** .projects
+    &__swiper
+      
+      &-pagination
+        left: 50% !important
+        transform: translateX(-50%) !important  
+      &-button        
+        &-prev
+          left: 20%
+        &-next
+          left: auto !important
+          right: 20% **/
   .footer
     &__map
       width: 100%
@@ -63,3 +103,4 @@
   .contacts
     &__phone
       margin-right: 9px
+
